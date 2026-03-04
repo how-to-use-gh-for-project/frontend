@@ -1,0 +1,40 @@
+name: Frontend bug
+description: Report a reproducible frontend bug.
+title: "fix(frontend): "
+labels:
+  - type: bug
+  - area: frontend
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: What is broken?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduce Steps
+      description: Include exact commands and route.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: done_definition
+    attributes:
+      label: Done Definition
+      placeholder: |
+        - [ ] Root cause fixed
+        - [ ] Regression test added/updated
+        - [ ] CI passes
+    validations:
+      required: true

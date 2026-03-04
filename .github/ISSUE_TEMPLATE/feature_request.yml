@@ -1,0 +1,35 @@
+name: Frontend feature
+description: Request a small UI/frontend feature for practice.
+title: "feat(frontend): "
+labels:
+  - type: feature
+  - area: frontend
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What user-facing behavior should be added?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define 2-3 testable outcomes.
+      placeholder: |
+        - [ ] Page renders expected data
+        - [ ] API call success/error path handled
+        - [ ] Lint/test/build pass
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: What should not be added?
+      placeholder: New auth flows, design system overhaul
+    validations:
+      required: true
